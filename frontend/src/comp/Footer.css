@@ -1,0 +1,72 @@
+.site-footer {
+    background-color: var(--primary);
+    /* Dark blue/Purple from theme */
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: auto;
+    /* Pushes footer to bottom if flex container */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #f1f5f9;
+}
+
+.footer-section a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.emergency .emergency-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24;
+    /* Amber/Yellow for attention */
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

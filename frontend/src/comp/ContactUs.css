@@ -1,0 +1,228 @@
+/* src/comp/ContactUs.css */
+
+.contact-container {
+    padding-top: 80px;
+    /* Space for fixed navbar if needed */
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.2);
+}
+
+.contact-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+}
+
+.info-card.emergency .icon-wrapper {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.info-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Content Split Layout */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Feedback Form */
+.feedback-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-box h2 {
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input-custom {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input-custom:focus {
+    outline: none;
+    border-color: #0284c7;
+}
+
+.submit-btn-custom {
+    width: 100%;
+    padding: 15px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn-custom:hover {
+    background: #0369a1;
+}
+
+/* Reviews Panel */
+.reviews-panel {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.reviews-panel h2 {
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 2rem;
+}
+
+.review-list {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.review-item {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0284c7;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #334155;
+}
+
+.review-text {
+    color: #64748b;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
